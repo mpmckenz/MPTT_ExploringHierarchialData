@@ -12,6 +12,7 @@ MPTT is a tool used to help manage hierarchical data in a CMS. It can be used to
 
 3. Add some test data, make a view, and HTML template for it
 4. a simple urls.py should look similar to this
+
    ```
    from django.urls import path
    from m_p_tree_traversal.views import FileView
@@ -20,10 +21,10 @@ MPTT is a tool used to help manage hierarchical data in a CMS. It can be used to
    from m_p_tree_traversal.models import folder_file
    ```
 
-
-    admin.site.register(folder_file, DraggableMPTTAdmin)
-    urlpatterns = [
-        path('admin/', admin.site.urls),
-        path("", FileView.as_view()),
-    ]
-    ```
+   ```
+   admin.site.register(folder_file, DraggableMPTTAdmin)
+   urlpatterns = [
+       path('admin/', admin.site.urls),
+       path("", FileView.as_view()),
+   ]
+   ```
